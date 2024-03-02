@@ -1,0 +1,26 @@
+<script>
+
+let x = prompt()
+let valores = x.split(' ')
+let a = valores[0]
+let b = valores[1]
+let c = valores[2]
+let r1 = parseFloat
+let r2 = parseFloat
+let delta = parseFloat
+
+if(a != 0 && c != 0){
+	delta = (b**2) - (4 * a * c)
+}
+
+if (delta > 0){
+	r1 = ((-b) + (Math.sqrt(delta))) / (2 * a)
+	r2 = ((-b) - (Math.sqrt(delta))) / (2 * a)
+	console.log("R1 = " + r1.toFixed(5))
+	console.log("R2 = " + r2.toFixed(5))
+}
+else{
+	console.log("Impossivel calcular")
+}
+
+</script>

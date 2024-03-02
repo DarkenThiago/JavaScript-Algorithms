@@ -1,0 +1,22 @@
+<script>
+
+let valores = lines.shift()
+let matrix = valores.split(' ')
+let a = matrix[0]
+let b = matrix[1]
+let c = matrix[2]
+let maiorAB
+let maiorResC
+
+a = Number(a)
+b = Number(b)
+c = Number(c)
+maiorAB = Number(maiorAB)
+maiorResC = Number(maiorResC)
+
+maiorAB = ((a + b) + Math.abs(a - b)) / 2
+maiorResC = ((maiorAB + c) + Math.abs(maiorAB - c)) / 2
+
+console.log(maiorResC + " eh o maior")
+
+</script>

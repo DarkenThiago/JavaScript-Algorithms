@@ -1,0 +1,40 @@
+<script>
+
+let M = []
+let userInput = prompt()
+let contJ = 1
+let soma = 0
+let media = 0
+let qtd = 0
+
+for(let i = 0; i < 12; i++){
+	M[i] = []
+	for(let j = 0; j < 12; j++){
+		M[i][j] = []
+	}
+}
+
+for(let i = 0; i < 12; i++){
+	for(let j = 0; j < 12; j++){
+		M[i][j] = Number(prompt())
+	}
+}
+
+for(let i = 0; i < 12; i++){
+	for(let j = contJ; j < 12; j++){
+		soma = soma + M[i][j]
+		qtd++
+	}
+	contJ++
+}
+
+if(userInput == "M"){
+	media = soma / qtd
+	console.log(media.toFixed(1))
+}
+
+if(userInput == "S"){
+	console.log(soma.toFixed(1))
+}
+
+</script>

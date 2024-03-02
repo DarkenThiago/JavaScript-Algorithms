@@ -1,0 +1,29 @@
+<script>
+
+let a = prompt()
+let valores = a.split(' ')
+let codigo = Number(valores[0])
+let qtd = Number(valores[1])
+let total = Number
+
+switch(codigo){
+	case 1:
+		total = 4 * qtd;
+		break;
+	case 2:
+		total = 4.50 * qtd;
+		break;
+	case 3:
+		total = 5.00 * qtd;
+		break;
+	case 4:
+		total = 2 * qtd;
+		break;
+	case 5:
+		total = 1.50 * qtd;
+		break;
+}
+
+console.log("Total: R$ " + total.toFixed(2));
+     
+</script>

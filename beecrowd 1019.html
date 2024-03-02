@@ -1,0 +1,22 @@
+<script>
+
+let N = prompt()
+let horas
+let minutos
+let segundos
+let resto
+
+N = parseInt(N)
+horas = parseInt(horas)
+minutos = parseInt(minutos)
+segundos = parseInt(segundos)
+resto = parseInt(resto)
+
+horas = N / 3600
+resto = N % 3600
+minutos = resto / 60
+segundos = resto % 60
+
+console.log(parseInt(horas) + ":" + parseInt(minutos) + ":" + parseInt(segundos))
+
+</script>

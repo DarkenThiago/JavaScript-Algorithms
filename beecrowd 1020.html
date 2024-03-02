@@ -1,0 +1,27 @@
+<script>
+
+let idade = prompt()
+let ano = 0
+let mes = 0
+let dia = 0
+
+while (idade >= 365){
+	ano = ano + 1
+	idade = idade - 365
+}
+
+while (idade < 365 && idade >= 30){
+	mes = mes + 1
+	idade = idade - 30
+}
+
+while (idade > 0){
+	dia = dia + 1
+	idade--
+}
+
+console.log(ano + " ano(s)")
+console.log(mes + " mes(es)")
+console.log(dia + " dia(s)")
+
+</script>

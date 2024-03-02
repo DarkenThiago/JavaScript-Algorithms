@@ -1,0 +1,46 @@
+<script>
+
+let corpo = prompt()
+let especie = prompt()
+let alimentacao = prompt()
+
+if (corpo == "vertebrado"){
+	if (especie == "ave"){
+		if (alimentacao == "carnivoro"){
+			console.log("aguia")
+		}
+		else if (alimentacao == "onivoro"){
+			console.log("pomba")
+		}
+	}
+	else if (especie == "mamifero"){
+		if (alimentacao == "onivoro"){
+			console.log("homem")
+		}
+		else if (alimentacao == "herbivoro"){
+			console.log("vaca")
+		}
+	}
+}
+
+else if (corpo == "invertebrado"){
+	if (especie == "inseto"){
+		if (alimentacao == "hematofago"){
+			console.log("pulga")
+		}
+		else if (alimentacao == "herbivoro"){
+			console.log("lagarta")
+		}
+	}
+	else if (especie == "anelideo"){
+		if (alimentacao == "hematofago"){
+			console.log("sanguessuga")
+		}
+		else if (alimentacao == "onivoro"){
+			console.log("minhoca")
+		}
+	}
+}
+
+
+</script>

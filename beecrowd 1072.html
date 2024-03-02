@@ -1,0 +1,23 @@
+<script>
+
+let N = Number(prompt())
+let dentro = 0
+let fora = 0
+let X
+
+if(N < 10000){
+	for(let i = 0; i < N; i++){
+		X = Number(prompt())
+		if(X >= 10 && X <= 20){
+			dentro++
+		}
+		else{
+			fora++
+		}
+	}
+}
+
+console.log(dentro + " in")
+console.log(fora + " out")
+
+</script>

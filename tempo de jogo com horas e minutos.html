@@ -1,0 +1,51 @@
+<script>
+
+let entrada = prompt()
+let valores = entrada.split(' ').map(Number)
+let [hora1, min1, hora2, min2] = valores
+let tempoH = 0
+let tempoM = 0
+
+if(hora1 < hora2){
+	tempoH = hora2 - hora1
+}
+else{
+	tempoH = 24 - hora1 + hora2
+}
+
+if(min1 < min2){
+	tempoM = min2 - min1
+}
+else{
+	tempoM = 60 - min1 + min2
+}
+
+if(tempoM == 59 && hora2 - hora1 > 0 && 24 - hora1 + hora2 > 0){
+	tempoH--
+}
+if(tempoM == 60){
+	tempoM = 0
+}
+
+if(hora1 == hora2 && min1 > min2){
+	tempoH--
+}
+
+if(hora1 > hora2 && min1 > min2){
+	tempoH--
+}
+if(hora1 < hora2 && min1 > min2){
+	tempoH--
+}
+
+if(tempoH == 24 && tempoM != 0){
+	tempoH = 0
+}
+
+if(tempoH < 0){
+	tempoH = 0
+}
+
+console.log("O JOGO DUROU " + tempoH + " HORA(S) E " + tempoM + " MINUTO(S)")
+
+</script>

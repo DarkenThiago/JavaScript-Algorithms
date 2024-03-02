@@ -1,0 +1,20 @@
+<script>
+
+let x = 1
+let n = parseInt(lines.shift())
+let maior = parseInt(0)
+let posMaior = 0
+
+while(n >= 0 && x <= 100){
+	if(n > maior){
+		maior = parseInt(n)
+		posMaior = x
+	}
+	n = parseInt(lines.shift())
+	x = x + 1
+}
+
+console.log(maior)
+console.log(posMaior)
+
+</script>
