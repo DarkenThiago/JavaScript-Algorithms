@@ -1,0 +1,56 @@
+<script>
+
+let N = prompt()
+let cem = 0
+let cinquenta = 0
+let vinte = 0
+let dez = 0
+let cinco = 0
+let dois = 0
+let um = 0
+
+N = Number(N)
+
+console.log(N)
+
+if (0 < N < 1000000){
+	while (N >= 100){
+		cem = cem + 1
+		N = N - 100
+	}
+	while (N >= 50){
+		cinquenta = cinquenta + 1
+		N = N - 50
+	}
+	while (N >= 20){
+		vinte = vinte + 1
+		N = N - 20
+	}
+	while (N >= 10){
+		dez = dez + 1
+		N = N - 10
+	}
+	while (N >= 5){
+		cinco = cinco + 1
+		N = N - 5
+	}
+	while (N >= 2){
+		dois = dois + 1
+		N = N - 2
+	}
+	while (N >= 1){
+		um = um + 1
+		N = N - 1
+	}
+}
+
+console.log(cem + " nota(s) de R$ 100,00")
+console.log(cinquenta + " nota(s) de R$ 50,00")
+console.log(vinte + " nota(s) de R$ 20,00")
+console.log(dez + " nota(s) de R$ 10,00")
+console.log(cinco + " nota(s) de R$ 5,00")
+console.log(dois + " nota(s) de R$ 2,00")
+console.log(um + " nota(s) de R$ 1,00")
+
+
+</script>

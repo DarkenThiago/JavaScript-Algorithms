@@ -1,0 +1,38 @@
+<script>
+
+let area = prompt()
+let valores = area.split(' ')
+let a = valores[0]
+let b = valores[1]
+let c = valores[2]
+let tri
+let cir
+let tra
+let qua
+let ret
+
+a = Number(a)
+b = Number(b)
+c = Number(c)
+tri = Number(tri)
+cir = Number(cir)
+tra = Number(tra)
+qua = Number(qua)
+ret = Number(ret)
+
+tri = a * c / 2
+console.log("TRIANGULO: " + tri.toFixed(3))
+
+cir = 3.14159 * c**2
+console.log("CIRCULO: " + cir.toFixed(3))
+
+tra = ((a + b) * c) / 2
+console.log("TRAPEZIO: " + tra.toFixed(3))
+
+qua = b**2
+console.log("QUADRADO: " + qua.toFixed(3))
+
+ret = a * b
+console.log("RETANGULO: " +ret.toFixed(3))
+
+</script>

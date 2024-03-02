@@ -1,0 +1,29 @@
+<script>
+
+let x = parseInt(prompt())
+let y = parseInt(prompt())
+let contador = parseInt(0)
+let soma = parseInt(0)
+
+if(x > y){
+	contador = parseInt(y)
+	while(contador <= x){
+		if(contador % 13 !== 0){
+			soma = soma + contador
+		}
+		contador = contador + 1
+	}
+}
+else{
+	contador = parseInt(x)
+	while(contador <= y){
+		if(contador % 13 !== 0){
+			soma = soma + contador
+		}
+		contador = x + 1
+	}
+}
+
+console.log(soma)
+
+</script>

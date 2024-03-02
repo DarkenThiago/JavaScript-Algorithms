@@ -1,0 +1,21 @@
+<script>
+
+let n = prompt()
+let valores = n.split(' ').map(Number)
+let [a, b, c] = valores
+
+valores.sort(function (a, b){
+	return a - b
+})
+
+console.log(valores[0])
+console.log(valores[1])
+console.log(valores[2])
+
+console.log("")
+
+console.log(a)
+console.log(b)
+console.log(c)
+
+</script>

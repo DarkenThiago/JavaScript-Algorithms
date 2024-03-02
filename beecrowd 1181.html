@@ -1,0 +1,39 @@
+<script>
+
+let M = []
+let linha = Number(prompt())
+let userInput = prompt()
+let soma = 0
+let media = 0
+let qtd = 0
+
+for(let i = 0; i < 3; i++){
+	M[i] = []
+	for(let j = 0; j < 3; j++){
+		M[i][j] = []
+	}
+}
+
+for(let i = 0; i < 3; i++){
+	for(let j = 0; j < 3; j++){
+		M[i][j] = Number(prompt())
+	}
+}
+
+for(let i = linha; i < linha+1; i++){
+	for(let j = 0; j < M[i].length; j++){
+		soma = M[i][j]
+		qtd++
+	}
+}
+
+if(userInput == "M"){
+	media = soma / qtd
+	console.log(media.toFixed(1))
+}
+
+if(userInput == "S"){
+	console.log(soma.toFixed(1))
+}
+
+</script>

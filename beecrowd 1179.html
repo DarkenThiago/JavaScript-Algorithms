@@ -1,0 +1,40 @@
+<script>
+
+let eUsuario
+let p1 = []
+let i1 = []
+let contP = 0
+let contI = 0
+
+for(let i = 0; i < 15; i++){
+	eUsuario = Number(prompt())
+	if(eUsuario % 2 == 0){
+		p1[contP] = eUsuario
+		contP++
+		if(contP == 5){
+			for(let j = 0; j < 5; j++){
+				console.log("par[" + j + "] = " + p1[j])
+			}
+			contP = 0
+		}
+	}
+	else{
+		i1[contI] = eUsuario
+		contI++
+		if(contI == 5){
+			for(let j = 0; j < 5; j++){
+				console.log("impar[" + j + "] = " + i1[j])
+			}
+			contI = 0
+		}
+	}
+}
+
+for(let i = 0; i < contI; i++){
+	console.log("impar[" + i + "] = " + i1[i])
+}
+
+for(let i = 0; i < contP; i++){
+	console.log("par[" + i + "] = " + p1[i])
+}
+</script>

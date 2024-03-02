@@ -1,0 +1,17 @@
+<script>
+
+let T = Number(prompt())
+let N = []
+let V = []
+
+if(2 <= T && T <= 50){
+	for(let i = 0; i < 1000; i++){
+		for(let j = 0; j < T; j++){
+		N.push(j)
+		}
+		V.push(N[i])
+		console.log("N[" + i + "] = " + V[i])
+	}	
+}
+
+</script>
